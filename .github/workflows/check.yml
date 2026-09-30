@@ -1,0 +1,16 @@
+name: Candidate checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --audit=false
+      - run: for file in src/*.js; do node --check "$file"; done
+      - run: npm test

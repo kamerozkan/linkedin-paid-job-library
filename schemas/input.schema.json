@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LinkedIn Job Library API candidate input proposal",
+  "description": "R&D interface proposal. Approved API access and permitted use are prerequisites; credentials are never fixture data. Runtime also validates calendar dates and date ordering.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "sourceMode": {
+      "type": "string",
+      "const": "officialApi",
+      "default": "officialApi"
+    },
+    "keyword": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "allOf": [
+        {
+          "pattern": "\\S"
+        },
+        {
+          "pattern": "^[^\\u0000-\\u001f\\u007f]*$"
+        }
+      ],
+      "description": "Source keyword criteria. Documented space-separated terms use logical AND."
+    },
+    "organization": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "allOf": [
+        {
+          "pattern": "\\S"
+        },
+        {
+          "pattern": "^[^\\u0000-\\u001f\\u007f]*$"
+        }
+      ],
+      "description": "Source organization-name criterion."
+    },
+    "payerName": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "allOf": [
+        {
+          "pattern": "\\S"
+        },
+        {
+          "pattern": "^[^\\u0000-\\u001f\\u007f]*$"
+        }
+      ],
+      "description": "Source payer-name criterion."
+    },
+    "countries": {
+      "type": "array",
+      "maxItems": 10,
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Z]{2}$"
+      },
+      "default": []
+    },
+    "dateFrom": {
+      "type": "string",
+      "format": "date",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "Inclusive start, supplied together with dateTo."
+    },
+    "dateTo": {
+      "type": "string",
+      "format": "date",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "Exclusive end, later than dateFrom."
+    },
+    "maxJobs": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 100,
+      "default": 24
+    },
+    "maxPages": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5,
+      "default": 1
+    },
+    "includeCountryDistribution": {
+      "type": "boolean",
+      "default": true
+    },
+    "linkedinAccessToken": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 8192,
+      "pattern": "^[^\\u0000-\\u0020\\u007f]+$",
+      "writeOnly": true,
+      "description": "Secret approved member OAuth token. Alternatively use LINKEDIN_ACCESS_TOKEN. Do not save in public example files."
+    }
+  },
+  "anyOf": [
+    {
+      "required": [
+        "keyword"
+      ]
+    },
+    {
+      "required": [
+        "organization"
+      ]
+    },
+    {
+      "required": [
+        "payerName"
+      ]
+    }
+  ],
+  "dependentRequired": {
+    "dateFrom": [
+      "dateTo"
+    ],
+    "dateTo": [
+      "dateFrom"
+    ]
+  }
+}

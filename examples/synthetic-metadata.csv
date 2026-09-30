@@ -1,0 +1,4 @@
+exampleType,jobId,title,company,payer,ranFrom,ranTo,impressionRangeStart,impressionRangeEnd,rangeEndpointInclusivity
+synthetic_fixture,9000000000001,[SYNTHETIC] Security Engineer,Example Research Organization A,Example Payer A,2025-06-01,2025-06-03,0,1000,unknown
+synthetic_fixture,9000000000002,[SYNTHETIC] Data Engineer,Example Research Organization B,Example Payer B,2025-06-01,,0,1000,unknown
+synthetic_fixture,9000000000003,[SYNTHETIC] Platform Engineer,Example Research Organization C,Example Payer C,2025-06-01,2025-06-04,0,1000,unknown

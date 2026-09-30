@@ -1,0 +1,10 @@
+{
+  "actorOutputSchemaVersion": 1,
+  "title": "Job Library candidate output",
+  "description": "Private R&D result rows and explicit run/access diagnostics. No confirmed live-source or commercial release claim.",
+  "properties": {
+    "results": {"type": "string", "title": "Validated observations", "description": "Only unique usable source metadata; never restricted or diagnostic rows.", "template": "{{links.apiDefaultDatasetUrl}}/items"},
+    "runSummary": {"type": "string", "title": "Run status and source diagnostics", "description": "OUTPUT: source access state, bounded scope, zero charge count and release gates.", "template": "{{links.apiDefaultKeyValueStoreUrl}}/records/OUTPUT"},
+    "csv": {"type": "string", "title": "Spreadsheet-safe CSV", "description": "Flat useful observation export. Empty with only headers if no useful rows.", "template": "{{links.apiDefaultKeyValueStoreUrl}}/records/report.csv"}
+  }
+}

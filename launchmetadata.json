@@ -1,0 +1,43 @@
+{
+  "slug": "linkedin-paid-job-library",
+  "title": "LinkedIn Job Library Scraper: Payers & EU Impressions",
+  "titleCharacterCount": 53,
+  "shortDescription": "Research candidate for LinkedIn Job Library paid-job metadata: payer names, reported dates, estimated EU impressions and country breakdowns. Requires approved API access and separate permission for commercial use. Automatic cloud output is not yet verified.",
+  "shortDescriptionCharacterCount": 257,
+  "status": "SOURCE_AND_COMMERCIAL_PERMISSION_GATED",
+  "publicPaidActorReady": false,
+  "billingEnabled": false,
+  "priceConfigured": false,
+  "logo": "assets/logo.png",
+  "logoRole": "Original independent icon, no LinkedIn official logo",
+  "intendedGitHubRepository": "https://github.com/kamerozkan/linkedin-paid-job-library",
+  "githubRepositoryCreatedOrPublishedByThisPackage": true,
+  "plannedActorUrl": "https://apify.com/kamerozkan/linkedin-paid-job-library",
+  "plannedActorUrlIsVerifiedPublicProduct": false,
+  "topics": [
+    "linkedin-job-library",
+    "job-transparency",
+    "payer-metadata",
+    "eu-impressions",
+    "official-api",
+    "research-candidate"
+  ],
+  "storeCopyFile": "STORE_LISTING_DRAFT.md",
+  "examplesAreSynthetic": true,
+  "sourceContract": "sourceMode officialApi; approved Ad Library product; three-legged member OAuth; billing disabled",
+  "launchPrerequisites": [
+    "Approved API product and permitted project scope",
+    "Relevant separate written permission for commercial service and data distribution",
+    "Useful approved-access cloud results and inspected summary",
+    "Verified pagination behavior and source limitations",
+    "Verified export, diagnostic and billing behavior before any paid release"
+  ],
+  "gitHubRepository": "https://github.com/kamerozkan/linkedin-paid-job-library",
+  "repositoryCreatedByOwner": true,
+  "repositoryContentsPublishedByThisPackage": false,
+  "offlineSourceTestsPassed": 30,
+  "githubRepository": "https://github.com/kamerozkan/linkedin-paid-job-library",
+  "actorId": "Ow2ChNprNpgSfNtna",
+  "privateConsoleUrl": "https://console.apify.com/actors/Ow2ChNprNpgSfNtna",
+  "actorPublic": false
+}

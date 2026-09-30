@@ -1,0 +1,15 @@
+{
+  "actorSpecification": 1,
+  "name": "linkedin-paid-job-library",
+  "title": "LinkedIn Paid Job Library Research Candidate",
+  "description": "Private R&D candidate for LinkedIn Job Library metadata. Source access and commercial reuse permission are unverified. No commercial charge operation is enabled.",
+  "version": "0.1",
+  "buildTag": "latest",
+  "defaultMemoryMbytes": 512,
+  "minMemoryMbytes": 256,
+  "maxMemoryMbytes": 1024,
+  "input": "./input_schema.json",
+  "output": "./output_schema.json",
+  "storages": {"dataset": "./dataset_schema.json"},
+  "dockerfile": "../Dockerfile"
+}

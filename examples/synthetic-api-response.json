@@ -1,0 +1,122 @@
+{
+  "exampleIsLiveData": false,
+  "fixturePurpose": "Synthetic API-shaped contract data. No real job or source request. Never request these placeholder URLs.",
+  "elements": [
+    {
+      "jobPostingUrl": "https://www.linkedin.com/ad-library/job/detail/9000000000001",
+      "isRestricted": false,
+      "jobDetails": {
+        "jobTitle": "[SYNTHETIC] Security Engineer",
+        "jobLocation": "Example city, Germany",
+        "organizationName": "Example Research Organization A",
+        "payerName": "Example Payer A",
+        "jobListTimeInMilliseconds": 1748736000000,
+        "jobStatistics": {
+          "totalImpressions": {
+            "start": 0,
+            "end": 1000
+          },
+          "impressionsPerCountry": [
+            {
+              "country": "urn:li:country:DE",
+              "impressionPercentage": 62
+            },
+            {
+              "country": "urn:li:country:NL",
+              "impressionPercentage": 38
+            }
+          ]
+        },
+        "jobTargeting": [
+          {
+            "facetName": "Location",
+            "includedSegments": [
+              "Example region"
+            ],
+            "excludedSegments": [],
+            "isIncluded": true,
+            "isExcluded": false
+          }
+        ],
+        "jobClosedTimeInMilliseconds": 1748908800000
+      }
+    },
+    {
+      "jobPostingUrl": "https://www.linkedin.com/ad-library/job/detail/9000000000002",
+      "isRestricted": false,
+      "jobDetails": {
+        "jobTitle": "[SYNTHETIC] Data Engineer",
+        "jobLocation": "Example city, Germany",
+        "organizationName": "Example Research Organization B",
+        "payerName": "Example Payer B",
+        "jobListTimeInMilliseconds": 1748736000000,
+        "jobStatistics": {
+          "totalImpressions": {
+            "start": 0,
+            "end": 1000
+          },
+          "impressionsPerCountry": [
+            {
+              "country": "urn:li:country:DE",
+              "impressions": 75
+            },
+            {
+              "country": "urn:li:country:NL",
+              "impressions": 25
+            }
+          ]
+        },
+        "jobTargeting": [
+          {
+            "facetName": "Location",
+            "includedSegments": [
+              "Example region"
+            ],
+            "excludedSegments": [],
+            "isIncluded": true,
+            "isExcluded": false
+          }
+        ]
+      }
+    },
+    {
+      "jobPostingUrl": "https://www.linkedin.com/ad-library/job/detail/9000000000003",
+      "isRestricted": false,
+      "jobDetails": {
+        "jobTitle": "[SYNTHETIC] Platform Engineer",
+        "jobLocation": "Example city, Germany",
+        "organizationName": "Example Research Organization C",
+        "payerName": "Example Payer C",
+        "jobListTimeInMilliseconds": 1748736000000,
+        "jobStatistics": {
+          "totalImpressions": {
+            "start": 0,
+            "end": 1000
+          },
+          "impressionsPerCountry": [
+            {
+              "country": "urn:li:country:DE",
+              "impressionPercentage": 50
+            },
+            {
+              "country": "urn:li:country:NL",
+              "impressionPercentage": 50
+            }
+          ]
+        },
+        "jobTargeting": [
+          {
+            "facetName": "Location",
+            "includedSegments": [
+              "Example region"
+            ],
+            "excludedSegments": [],
+            "isIncluded": true,
+            "isExcluded": false
+          }
+        ],
+        "jobClosedTimeInMilliseconds": 1748995200000
+      }
+    }
+  ]
+}

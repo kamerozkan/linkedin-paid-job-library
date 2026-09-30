@@ -1,0 +1,15 @@
+{
+  "actorSpecification": 1,
+  "fields": {
+    "type": "object",
+    "title": "Validated Job Library metadata observation",
+    "properties": {
+      "jobId": {"type": "string"}, "title": {"type": "string"}, "jobLocation": {"type": ["string", "null"]}, "company": {"type": "string"}, "companyUrl": {"type": ["string", "null"]}, "payer": {"type": "string"},
+      "listedAt": {"type": "string"}, "closedAt": {"type": ["string", "null"]}, "sourceOpenEnded": {"type": ["boolean", "null"]}, "totalImpressions": {"type": "object"}, "impressionsByCountry": {"type": "array"}, "targeting": {"type": "array"},
+      "sourceUrl": {"type": "string"}, "observedAt": {"type": "string"}, "collectionMethod": {"type": "string"}, "warnings": {"type": "array"}
+    }
+  },
+  "views": {
+    "overview": {"title": "Useful observations", "transformation": {"fields": ["jobId", "title", "company", "payer", "listedAt", "closedAt", "totalImpressions", "sourceUrl", "observedAt"]}, "display": {"component": "table", "properties": {"title": {"label": "Job title"}, "company": {"label": "Company"}, "payer": {"label": "Payer"}, "listedAt": {"label": "Listed UTC"}, "sourceUrl": {"label": "Source", "format": "link"}}}}
+  }
+}

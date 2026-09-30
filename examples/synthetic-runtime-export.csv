@@ -1,0 +1,4 @@
+jobId,title,jobLocation,company,payer,listedAt,closedAt,totalImpressionsMin,totalImpressionsMax,sourceUrl,observedAt
+"9000000000001","[SYNTHETIC] Security Engineer","Example city, Germany","Example Research Organization A","Example Payer A","2025-06-01T00:00:00.000Z","2025-06-03T00:00:00.000Z","0","1000","https://www.linkedin.com/ad-library/job/detail/9000000000001","2025-06-05T00:00:00.000Z"
+"9000000000002","[SYNTHETIC] Data Engineer","Example city, Germany","Example Research Organization B","Example Payer B","2025-06-01T00:00:00.000Z","","0","1000","https://www.linkedin.com/ad-library/job/detail/9000000000002","2025-06-05T00:00:00.000Z"
+"9000000000003","[SYNTHETIC] Platform Engineer","Example city, Germany","Example Research Organization C","Example Payer C","2025-06-01T00:00:00.000Z","2025-06-04T00:00:00.000Z","0","1000","https://www.linkedin.com/ad-library/job/detail/9000000000003","2025-06-05T00:00:00.000Z"

@@ -1,0 +1,20 @@
+{
+  "title": "LinkedIn Paid Job Library R&D Candidate Input",
+  "description": "Private research candidate. Approved API access and explicit commercial reuse permission are not established. No result charges. Supply a search criterion; do not enter credentials in plain-text query fields.",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "sourceMode": {"title": "Source provider", "type": "string", "editor": "select", "enum": ["officialApi"], "default": "officialApi", "description": "Fixed official LinkedIn Job Library API endpoint. No browser, cookies or challenge workaround."},
+    "keyword": {"title": "Job keywords", "type": "string", "editor": "textfield", "description": "Space-separated terms are logically ANDed by the source API. Supply keyword, organization or payerName.", "maxLength": 200, "prefill": "software engineer"},
+    "organization": {"title": "Organization name", "type": "string", "editor": "textfield", "maxLength": 200, "description": "Organization name criterion supplied to the official API."},
+    "payerName": {"title": "Payer name", "type": "string", "editor": "textfield", "maxLength": 200, "description": "Paid-for-by name criterion supplied to the official API."},
+    "countries": {"title": "Country codes", "type": "array", "editor": "stringList", "items": {"type": "string", "pattern": "^[A-Z]{2}$"}, "maxItems": 10, "description": "Up to ten uppercase country codes, such as DE or US. They are converted to the source country URNs.", "prefill": ["DE"]},
+    "dateFrom": {"title": "Listed date from", "type": "string", "editor": "textfield", "description": "YYYY-MM-DD inclusive start. Must be paired with dateTo. Omission uses the source's own default date window."},
+    "dateTo": {"title": "Listed date to", "type": "string", "editor": "textfield", "description": "YYYY-MM-DD exclusive end, later than dateFrom. Must be paired with dateFrom."},
+    "maxJobs": {"title": "Maximum usable results", "type": "integer", "editor": "number", "minimum": 1, "maximum": 100, "default": 24, "description": "Hard bound on validated unique result rows. Source requests contain at most 24 elements."},
+    "maxPages": {"title": "Maximum source pages", "type": "integer", "editor": "number", "minimum": 1, "maximum": 5, "default": 1, "description": "Hard bound on source requests. Complete archive coverage is not claimed."},
+    "includeCountryDistribution": {"title": "Include country impression shares", "type": "boolean", "editor": "checkbox", "default": true, "description": "Preserve source percentages and raw source keys; no exact impression count is inferred."},
+    "linkedinAccessToken": {"title": "Approved LinkedIn API member token", "type": "string", "editor": "textfield", "isSecret": true, "description": "Three-legged access token for an approved LinkedIn Ad Library API application. Alternatively configure LINKEDIN_ACCESS_TOKEN. Access alone does not permit paid commercial data resale."}
+  },
+  "required": []
+}

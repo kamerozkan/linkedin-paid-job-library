@@ -1,0 +1,301 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LinkedIn Job Library API candidate usable record proposal",
+  "description": "Normalized candidate contract, not evidence of a live API batch. Synthetic expected records are contract tests, never collected source proof.",
+  "type": "object",
+  "properties": {
+    "jobId": {
+      "type": "string",
+      "pattern": "^\\d+$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "jobLocation": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "company": {
+      "type": "string",
+      "minLength": 1
+    },
+    "companyUrl": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri"
+    },
+    "payer": {
+      "type": "string",
+      "minLength": 1
+    },
+    "listedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "closedAt": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "ranFrom": {
+      "type": "string",
+      "format": "date"
+    },
+    "ranTo": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "sourceOpenEnded": {
+      "enum": [
+        null,
+        false
+      ],
+      "description": "Missing closure is unknown. No current job availability is inferred."
+    },
+    "sourceUrl": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://www\\.linkedin\\.com/ad-library/job/detail/\\d+$"
+    },
+    "observedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "collectionMethod": {
+      "const": "official_linkedin_job_library_api"
+    },
+    "totalImpressions": {
+      "type": "object",
+      "description": "Estimated API range. Endpoint inclusivity is not documented and stays unknown; no browser-label boundary inference.",
+      "properties": {
+        "raw": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "properties": {
+            "start": {},
+            "end": {}
+          },
+          "required": [
+            "start",
+            "end"
+          ],
+          "additionalProperties": false
+        },
+        "min": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "max": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "minInclusive": {
+          "type": "null"
+        },
+        "maxInclusive": {
+          "type": "null"
+        },
+        "estimated": {
+          "const": true
+        },
+        "parseStatus": {
+          "enum": [
+            "api_estimated_range",
+            "missing",
+            "unrecognized"
+          ]
+        }
+      },
+      "required": [
+        "raw",
+        "min",
+        "max",
+        "minInclusive",
+        "maxInclusive",
+        "estimated",
+        "parseStatus"
+      ],
+      "additionalProperties": false
+    },
+    "impressionsByCountry": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "description": "Preserves the API percentage field alias and original number.",
+        "properties": {
+          "countryUrn": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "countryCode": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^[A-Z]{2}$"
+          },
+          "raw": {},
+          "sourceKey": {
+            "enum": [
+              "impressionPercentage",
+              "impressions",
+              null
+            ]
+          },
+          "value": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0,
+            "maximum": 100
+          },
+          "max": {
+            "type": "null"
+          },
+          "maxInclusive": {
+            "type": "null"
+          },
+          "rounded": {
+            "const": true
+          },
+          "parseStatus": {
+            "enum": [
+              "source_percentage",
+              "unrecognized"
+            ]
+          }
+        },
+        "required": [
+          "countryUrn",
+          "countryCode",
+          "raw",
+          "sourceKey",
+          "value",
+          "max",
+          "maxInclusive",
+          "rounded",
+          "parseStatus"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "targeting": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "facetName": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "includedSegments": {
+            "type": "array"
+          },
+          "excludedSegments": {
+            "type": "array"
+          },
+          "isIncluded": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "isExcluded": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "facetName",
+          "includedSegments",
+          "excludedSegments",
+          "isIncluded",
+          "isExcluded"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "contentHash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "usable": {
+      "const": true
+    },
+    "status": {
+      "const": "usable_metadata"
+    },
+    "schemaVersion": {
+      "const": "linkedin-paid-job-library/1"
+    },
+    "restricted": {
+      "enum": [
+        false,
+        null
+      ]
+    },
+    "diagnostics": {
+      "type": "array",
+      "maxItems": 0,
+      "description": "Usable dataset rows contain no parsing diagnostics. Diagnostic records belong in OUTPUT."
+    }
+  },
+  "required": [
+    "jobId",
+    "title",
+    "jobLocation",
+    "company",
+    "companyUrl",
+    "payer",
+    "listedAt",
+    "closedAt",
+    "ranFrom",
+    "ranTo",
+    "sourceOpenEnded",
+    "sourceUrl",
+    "observedAt",
+    "collectionMethod",
+    "totalImpressions",
+    "impressionsByCountry",
+    "targeting",
+    "contentHash",
+    "warnings",
+    "usable",
+    "status",
+    "schemaVersion",
+    "restricted",
+    "diagnostics"
+  ],
+  "additionalProperties": false
+}

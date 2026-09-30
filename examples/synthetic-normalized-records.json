@@ -1,0 +1,224 @@
+{
+  "exampleIsLiveData": false,
+  "examplePurpose": "Offline parser output from fictional API-shaped fixture. No source request, cloud run or billable event.",
+  "observedAtIsSynthetic": true,
+  "chargedCount": 0,
+  "records": [
+    {
+      "schemaVersion": "linkedin-paid-job-library/1",
+      "status": "usable_metadata",
+      "usable": true,
+      "jobId": "9000000000001",
+      "title": "[SYNTHETIC] Security Engineer",
+      "jobLocation": "Example city, Germany",
+      "company": "Example Research Organization A",
+      "companyUrl": null,
+      "payer": "Example Payer A",
+      "ranFrom": "2025-06-01",
+      "ranTo": "2025-06-03",
+      "listedAt": "2025-06-01T00:00:00.000Z",
+      "closedAt": "2025-06-03T00:00:00.000Z",
+      "sourceOpenEnded": false,
+      "sourceUrl": "https://www.linkedin.com/ad-library/job/detail/9000000000001",
+      "observedAt": "2025-06-05T00:00:00.000Z",
+      "collectionMethod": "official_linkedin_job_library_api",
+      "totalImpressions": {
+        "raw": {
+          "start": 0,
+          "end": 1000
+        },
+        "min": 0,
+        "max": 1000,
+        "minInclusive": null,
+        "maxInclusive": null,
+        "estimated": true,
+        "parseStatus": "api_estimated_range"
+      },
+      "impressionsByCountry": [
+        {
+          "countryUrn": "urn:li:country:DE",
+          "countryCode": "DE",
+          "raw": 62,
+          "sourceKey": "impressionPercentage",
+          "value": 62,
+          "max": null,
+          "maxInclusive": null,
+          "rounded": true,
+          "parseStatus": "source_percentage"
+        },
+        {
+          "countryUrn": "urn:li:country:NL",
+          "countryCode": "NL",
+          "raw": 38,
+          "sourceKey": "impressionPercentage",
+          "value": 38,
+          "max": null,
+          "maxInclusive": null,
+          "rounded": true,
+          "parseStatus": "source_percentage"
+        }
+      ],
+      "targeting": [
+        {
+          "facetName": "Location",
+          "includedSegments": [
+            "Example region"
+          ],
+          "excludedSegments": [],
+          "isIncluded": true,
+          "isExcluded": false
+        }
+      ],
+      "restricted": false,
+      "diagnostics": [],
+      "warnings": [
+        "company_url_not_observed"
+      ],
+      "contentHash": "ab314b6cc969464f83143063cede887d065961ef1e8859358b2c2ba42f6272da"
+    },
+    {
+      "schemaVersion": "linkedin-paid-job-library/1",
+      "status": "usable_metadata",
+      "usable": true,
+      "jobId": "9000000000002",
+      "title": "[SYNTHETIC] Data Engineer",
+      "jobLocation": "Example city, Germany",
+      "company": "Example Research Organization B",
+      "companyUrl": null,
+      "payer": "Example Payer B",
+      "ranFrom": "2025-06-01",
+      "ranTo": null,
+      "listedAt": "2025-06-01T00:00:00.000Z",
+      "closedAt": null,
+      "sourceOpenEnded": null,
+      "sourceUrl": "https://www.linkedin.com/ad-library/job/detail/9000000000002",
+      "observedAt": "2025-06-05T00:00:00.000Z",
+      "collectionMethod": "official_linkedin_job_library_api",
+      "totalImpressions": {
+        "raw": {
+          "start": 0,
+          "end": 1000
+        },
+        "min": 0,
+        "max": 1000,
+        "minInclusive": null,
+        "maxInclusive": null,
+        "estimated": true,
+        "parseStatus": "api_estimated_range"
+      },
+      "impressionsByCountry": [
+        {
+          "countryUrn": "urn:li:country:DE",
+          "countryCode": "DE",
+          "raw": 75,
+          "sourceKey": "impressions",
+          "value": 75,
+          "max": null,
+          "maxInclusive": null,
+          "rounded": true,
+          "parseStatus": "source_percentage"
+        },
+        {
+          "countryUrn": "urn:li:country:NL",
+          "countryCode": "NL",
+          "raw": 25,
+          "sourceKey": "impressions",
+          "value": 25,
+          "max": null,
+          "maxInclusive": null,
+          "rounded": true,
+          "parseStatus": "source_percentage"
+        }
+      ],
+      "targeting": [
+        {
+          "facetName": "Location",
+          "includedSegments": [
+            "Example region"
+          ],
+          "excludedSegments": [],
+          "isIncluded": true,
+          "isExcluded": false
+        }
+      ],
+      "restricted": false,
+      "diagnostics": [],
+      "warnings": [
+        "company_url_not_observed"
+      ],
+      "contentHash": "2d72c3251398749a5f60b6a39fabbb770e5230af56b282f635ef55445f022aeb"
+    },
+    {
+      "schemaVersion": "linkedin-paid-job-library/1",
+      "status": "usable_metadata",
+      "usable": true,
+      "jobId": "9000000000003",
+      "title": "[SYNTHETIC] Platform Engineer",
+      "jobLocation": "Example city, Germany",
+      "company": "Example Research Organization C",
+      "companyUrl": null,
+      "payer": "Example Payer C",
+      "ranFrom": "2025-06-01",
+      "ranTo": "2025-06-04",
+      "listedAt": "2025-06-01T00:00:00.000Z",
+      "closedAt": "2025-06-04T00:00:00.000Z",
+      "sourceOpenEnded": false,
+      "sourceUrl": "https://www.linkedin.com/ad-library/job/detail/9000000000003",
+      "observedAt": "2025-06-05T00:00:00.000Z",
+      "collectionMethod": "official_linkedin_job_library_api",
+      "totalImpressions": {
+        "raw": {
+          "start": 0,
+          "end": 1000
+        },
+        "min": 0,
+        "max": 1000,
+        "minInclusive": null,
+        "maxInclusive": null,
+        "estimated": true,
+        "parseStatus": "api_estimated_range"
+      },
+      "impressionsByCountry": [
+        {
+          "countryUrn": "urn:li:country:DE",
+          "countryCode": "DE",
+          "raw": 50,
+          "sourceKey": "impressionPercentage",
+          "value": 50,
+          "max": null,
+          "maxInclusive": null,
+          "rounded": true,
+          "parseStatus": "source_percentage"
+        },
+        {
+          "countryUrn": "urn:li:country:NL",
+          "countryCode": "NL",
+          "raw": 50,
+          "sourceKey": "impressionPercentage",
+          "value": 50,
+          "max": null,
+          "maxInclusive": null,
+          "rounded": true,
+          "parseStatus": "source_percentage"
+        }
+      ],
+      "targeting": [
+        {
+          "facetName": "Location",
+          "includedSegments": [
+            "Example region"
+          ],
+          "excludedSegments": [],
+          "isIncluded": true,
+          "isExcluded": false
+        }
+      ],
+      "restricted": false,
+      "diagnostics": [],
+      "warnings": [
+        "company_url_not_observed"
+      ],
+      "contentHash": "f12a75fe440c592ba8ad13ccbafdcfca9e0e5432a0cce61a120d85a0597c81d2"
+    }
+  ]
+}
