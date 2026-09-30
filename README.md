@@ -1,6 +1,6 @@
 # LinkedIn Job Library Scraper: Payers & EU Impressions
 
-![Independent Job Library product icon](https://raw.githubusercontent.com/kamerozkan/linkedin-paid-job-library/main/assets/logo.png)
+<img src="https://raw.githubusercontent.com/kamerozkan/linkedin-paid-job-library/main/assets/logo.png" alt="Independent Job Library product icon" width="112" height="112">
 
 **Research and development candidate. Status: `SOURCE_AND_COMMERCIAL_PERMISSION_GATED`, 1 October 2026.** No approved API access, separate commercial permission or successful cloud collection has been verified for this project. Billing is disabled. This repository is not a ready paid data feed.
 
