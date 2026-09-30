@@ -13,3 +13,5 @@ Status: `SOURCE_AND_COMMERCIAL_PERMISSION_GATED`. This copy is a launch proposal
 **Search terms:** LinkedIn Job Library, paid jobs, payer, EU impressions, country breakdown, job archive, official API.
 
 **Release boundary:** Public R&D code and synthetic fixtures may be reviewed. An automatic paid product, price, supported-account claim and commercial dataset delivery remain unverified. The planned Actor URL is a candidate identifier, not a working public service link.
+
+**Latest source check:** the isolated `source-preflight` browser build `0.2.1` returned HTTP 403 from Cloudflare in the actual Apify cloud, with zero detail links and no successful live rows. The private `latest` build remains `0.1.1`. Passing local fixture tests do not establish automatic source access. See [verification evidence](evidence/verification.json).

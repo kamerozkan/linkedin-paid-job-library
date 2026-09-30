@@ -12,7 +12,7 @@ The official API requires an approved LinkedIn Ad Library product and a member t
 
 API approval alone also does not establish permission to sell this service or redistribute raw data. LinkedIn's Research API terms restrict standalone tools and raw data distribution in section 1.4, commercial uses and tool-based work products in section 3.1, and distinguish Developer Site access approval from required written permission in section 7.5. Commercial publication remains blocked until the relevant written permission and scope are verified. [LinkedIn Research API Program Terms](https://www.linkedin.com/legal/l/research-api-terms)
 
-Normal HTTP and clean public-browser preflights returned HTTP 403. There is no browser bypass provider in this candidate. Offline fixture tests do not establish source access. See [verification status](evidence/verification.json).
+Normal HTTP and clean public-browser preflights returned HTTP 403. A separate plain-Chromium test in the actual Apify cloud also returned HTTP 403 from Cloudflare and found zero Job Library detail links. No successful live rows have been verified. There is no browser bypass provider in this candidate. The 30 passing tests use local synthetic fixtures and do not establish source access. See [verification status](evidence/verification.json).
 
 ## Candidate interface
 
@@ -81,4 +81,8 @@ The Docker build uses Node 22 and runs these tests. Running the Actor without an
 
 ## Dated private deployment check
 
-Private Actor build `0.1.1` (`I0cAgJx3cCQIVwpwJ`) built successfully. Owner run `qP6uYcOKpLn7iV6qI` intentionally supplied no LinkedIn token: platform `FAILED`, `OUTPUT.status=FAILED_SOURCE`, reason `API_ACCESS_TOKEN_REQUIRED`, zero source requests, zero dataset rows and zero result charges. This verifies the missing-access failure path only. Live collection and commercial reuse remain unverified. The [GitHub checks](https://github.com/kamerozkan/linkedin-paid-job-library/actions/runs/36789362955) passed; they use offline fixtures.
+The Actor remains private (`isPublic: false`), and its `latest` tag remains on build `0.1.1` (`I0cAgJx3cCQIVwpwJ`). Owner run `qP6uYcOKpLn7iV6qI` intentionally supplied no LinkedIn token: platform `FAILED`, `OUTPUT.status=FAILED_SOURCE`, reason `API_ACCESS_TOKEN_REQUIRED`, zero source requests, zero dataset rows and zero result charges. This verifies the missing-access failure path only.
+
+The isolated `source-preflight` tag used browser-test build `0.2.1` (`Maf1NdsYPGYpN4i5W`). Run `D51Qkfx1WFvfvw6Ig` made one plain-Chromium navigation in the actual Apify cloud to the `software engineer` search for Germany. It finished `FAILED` at `2026-09-30T23:19:19.234Z`: HTTP 403, a Cloudflare block page and zero detail links. No login, proxy, stealth, custom headers or challenge solving was used. This was a failed source-access test, not a successful API collection or a promotion of build `0.2.1` to `latest`. Its measured run and build usage costs are recorded separately in [verification evidence](evidence/verification.json).
+
+No successful live rows have been verified. Commercial permission and live API collection remain unverified. The [GitHub checks](https://github.com/kamerozkan/linkedin-paid-job-library/actions/runs/36789362955) and the 30 local tests passed using offline synthetic fixtures only.

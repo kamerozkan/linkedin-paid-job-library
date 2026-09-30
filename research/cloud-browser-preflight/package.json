@@ -1,0 +1,9 @@
+{
+  "name": "ordinary-source-preflight",
+  "version": "0.0.1",
+  "type": "module",
+  "dependencies": {
+    "apify": "3.7.2",
+    "playwright": "1.63.0"
+  }
+}

@@ -12,7 +12,8 @@
     "id": "I0cAgJx3cCQIVwpwJ",
     "number": "0.1.1",
     "status": "SUCCEEDED",
-    "finishedAt": "2026-09-30T23:06:05.505Z"
+    "finishedAt": "2026-09-30T23:06:05.505Z",
+    "tag": "latest"
   },
   "cloudSourceGateTest": {
     "runId": "qP6uYcOKpLn7iV6qI",
@@ -40,7 +41,10 @@
     "normalBrowserPreflightStatus": 403,
     "approvedApiProductVerified": false,
     "liveApiCollectionVerified": false,
-    "commercialPermissionVerified": false
+    "commercialPermissionVerified": false,
+    "ordinaryBrowserCloudPreflightStatus": 403,
+    "ordinaryBrowserCloudDetailLinkCount": 0,
+    "successfulLiveRowsVerified": false
   },
   "publicExamples": {
     "count": 3,
@@ -52,5 +56,33 @@
     "Obtain relevant approved API access and written permission if using the API program.",
     "Inspect useful actual cloud data and source cost.",
     "Validate live pagination and any billing contract before public paid release."
-  ]
+  ],
+  "privateLatestUnchangedAfterPreflight": true,
+  "isolatedBrowserCloudPreflight": {
+    "tag": "source-preflight",
+    "isolatedFromPrivateLatest": true,
+    "buildNumber": "0.2.1",
+    "buildId": "Maf1NdsYPGYpN4i5W",
+    "runId": "D51Qkfx1WFvfvw6Ig",
+    "platformStatus": "FAILED",
+    "startedAt": "2026-09-30T23:19:15.741Z",
+    "finishedAt": "2026-09-30T23:19:19.234Z",
+    "sourceUrl": "https://www.linkedin.com/ad-library/job/search?keyword=software+engineer&countries=DE",
+    "browser": "Plain Chromium in the actual Apify cloud runtime",
+    "pageNavigations": 1,
+    "httpStatus": 403,
+    "challengeProvider": "Cloudflare",
+    "challengeOrBlockObserved": true,
+    "detailLinkCount": 0,
+    "successfulLiveRowsVerified": false,
+    "loginUsed": false,
+    "proxyUsed": false,
+    "stealthUsed": false,
+    "customHeadersUsed": false,
+    "challengeSolved": false,
+    "runUsageCostUsd": 0.0004713869028968944,
+    "buildUsageCostUsd": 0.0027462222222222224,
+    "testPurpose": "One ordinary cloud browser navigation to assess public source access. This failed source test is not an API collection run or a working product release."
+  },
+  "offlineTestsOnly": true
 }

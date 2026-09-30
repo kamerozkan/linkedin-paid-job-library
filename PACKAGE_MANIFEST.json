@@ -59,13 +59,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 8282,
-      "sha256": "08a6a2af6f54c9c5bcc0f6357ee2fc4f3cc9ba55959d2032e945ce22fe5f0be0"
+      "bytes": 9268,
+      "sha256": "a4c65732c336a4aaf18b6337d2aaaa0443322408ccab846026fda9a46aa3d8cb"
     },
     {
       "path": "STORE_LISTING_DRAFT.md",
-      "bytes": 1199,
-      "sha256": "4452c20b9cad72adde8ed862180f14d61b416574f171b0603dbc8df44f167df6"
+      "bytes": 1563,
+      "sha256": "431ec3854e8994faff73f00548ba6c8e2cd3a9b0504ffc11669f536a373eb1b2"
     },
     {
       "path": "USE_CASES.md",
@@ -79,8 +79,8 @@
     },
     {
       "path": "evidence/verification.json",
-      "bytes": 1871,
-      "sha256": "8a85903ee6890fce690b18a97c35dce6af47136f3fea50983bce200abee1f22d"
+      "bytes": 3206,
+      "sha256": "2d6c2fef3a5c2ff548c5badd5d61b4fc6b298954e00d5af5acda9362740ad3cf"
     },
     {
       "path": "examples/README.md",
@@ -114,8 +114,8 @@
     },
     {
       "path": "launchmetadata.json",
-      "bytes": 2392,
-      "sha256": "403dc49599a003a4ad217b6ea2dd5cd9bd258a48e0ce93207df1b16ee68b3d39"
+      "bytes": 3662,
+      "sha256": "c926fe9cd57bb35dbadde83b050b8e84467b1a38ca3ceb741fccfc8c484fcead"
     },
     {
       "path": "package-lock.json",
@@ -126,6 +126,26 @@
       "path": "package.json",
       "bytes": 303,
       "sha256": "3e25b3bd370537b0da457fff26b83755c97194c993df9bca22e8bb4b631bf104"
+    },
+    {
+      "path": "research/cloud-browser-preflight/Dockerfile",
+      "bytes": 145,
+      "sha256": "ea2e3fa66ef2dfe3f567e3cd8fc48574df4ce9113d825e40605199c45c99510d"
+    },
+    {
+      "path": "research/cloud-browser-preflight/README.md",
+      "bytes": 1033,
+      "sha256": "dbabfb49d9a51257b6739fd39f555ae30ee6e2cd306cf716f32c2368e98029ec"
+    },
+    {
+      "path": "research/cloud-browser-preflight/main.js",
+      "bytes": 2384,
+      "sha256": "4f9c6fec271ed03fbec32941dba2fe31c3441706a8d56d2e1c6e58ef057c00c1"
+    },
+    {
+      "path": "research/cloud-browser-preflight/package.json",
+      "bytes": 157,
+      "sha256": "618229d9075f57ea648405c9204cc21b56f6545a3a2e19e57290af55fb665153"
     },
     {
       "path": "schemas/input.schema.json",
