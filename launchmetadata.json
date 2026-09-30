@@ -39,5 +39,12 @@
   "githubRepository": "https://github.com/kamerozkan/linkedin-paid-job-library",
   "actorId": "Ow2ChNprNpgSfNtna",
   "privateConsoleUrl": "https://console.apify.com/actors/Ow2ChNprNpgSfNtna",
-  "actorPublic": false
+  "actorPublic": false,
+  "actorDeployedPrivately": true,
+  "candidateBuildNumber": "0.1.1",
+  "candidateBuildId": "I0cAgJx3cCQIVwpwJ",
+  "sourceGateRunId": "qP6uYcOKpLn7iV6qI",
+  "sourceCollectionVerified": false,
+  "logoAssignedToActor": false,
+  "logoAssetIncluded": true
 }

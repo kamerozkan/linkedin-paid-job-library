@@ -1,68 +1,56 @@
 {
   "status": "SOURCE_AND_COMMERCIAL_PERMISSION_GATED",
-  "asOf": "2026-10-01",
-  "packageRole": "R&D candidate documentation and synthetic fixtures",
-  "approvedApiAccessVerified": false,
-  "commercialWrittenPermissionVerified": false,
-  "successfulCloudCollectionVerified": false,
-  "liveApiPaginationVerified": false,
+  "observedLocalDate": "2026-10-01",
+  "actorId": "Ow2ChNprNpgSfNtna",
+  "actorPublic": false,
+  "commercialReady": false,
   "billingEnabled": false,
-  "chargedCount": 0,
+  "priceConfigured": false,
+  "offlineTestsPassed": 30,
+  "independentReviewPassed": true,
+  "build": {
+    "id": "I0cAgJx3cCQIVwpwJ",
+    "number": "0.1.1",
+    "status": "SUCCEEDED",
+    "finishedAt": "2026-09-30T23:06:05.505Z"
+  },
+  "cloudSourceGateTest": {
+    "runId": "qP6uYcOKpLn7iV6qI",
+    "buildId": "I0cAgJx3cCQIVwpwJ",
+    "platformStatus": "FAILED",
+    "outputStatus": "FAILED_SOURCE",
+    "exitCode": 1,
+    "diagnosticCode": "API_ACCESS_TOKEN_REQUIRED",
+    "usableResultCount": 0,
+    "datasetRows": 0,
+    "sourceRequestsIssued": 0,
+    "chargedResultCount": 0,
+    "pricingInfoPresent": false,
+    "finishedAt": "2026-09-30T23:07:21.272Z",
+    "testPurpose": "Expected failure without a LinkedIn access token. This is not a successful source-collection test."
+  },
+  "githubChecks": {
+    "runId": 36789362955,
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/kamerozkan/linkedin-paid-job-library/actions/runs/36789362955"
+  },
+  "sourceAccess": {
+    "ordinaryBrowserAutomatedCollectionVerified": false,
+    "normalBrowserPreflightStatus": 403,
+    "approvedApiProductVerified": false,
+    "liveApiCollectionVerified": false,
+    "commercialPermissionVerified": false
+  },
   "publicExamples": {
-    "type": "synthetic_contract_fixtures",
-    "exampleIsLiveData": false,
-    "realCapturedRecordsIncluded": false,
-    "fullJobDescriptionBodiesIncluded": false
+    "count": 3,
+    "areSynthetic": true,
+    "liveSourceCapturesIncluded": false
   },
-  "privateManualResearch": {
-    "observations": 3,
-    "observationDate": "2026-09-30",
-    "automaticCollectionProof": false,
-    "sourceRecordsPublishedInThisPackage": false
-  },
-  "sourcePreflight": {
-    "normalUnauthenticatedHttp": "HTTP_403",
-    "cleanPublicBrowser": "HTTP_403",
-    "challengeBypassPerformed": false
-  },
-  "releaseGates": [
-    "Approved API product and permitted project scope",
-    "Relevant separate written permission for commercial service and data distribution",
-    "Useful approved-access cloud results and inspected summary",
-    "Verified pagination behavior and source limitations",
-    "Verified export, diagnostic and billing behavior before any paid release"
-  ],
-  "sources": [
-    {
-      "url": "https://www.linkedin.com/ad-library/api/jobs",
-      "role": "Official API documentation, observed by owner in normal browser"
-    },
-    {
-      "url": "https://www.linkedin.com/legal/l/research-api-terms",
-      "role": "Official program terms including commercial and redistribution restrictions"
-    },
-    {
-      "url": "https://www.linkedin.com/help/linkedin/answer/a7451373",
-      "role": "Job Library source scope"
-    },
-    {
-      "url": "https://www.linkedin.com/help/linkedin/answer/a7454261",
-      "role": "Estimated impressions and country rounding"
-    }
-  ],
-  "offlineValidation": {
-    "sourceSuiteCommand": "npm run check",
-    "sourceSuitePassed": 30,
-    "sourceSuiteFailed": 0,
-    "fixtureElementsParsed": 3,
-    "usableSyntheticRecords": 3,
-    "syntheticDiagnostics": 0,
-    "liveSourceValidated": false,
-    "missingClosureStayedUnknown": true,
-    "countryAliasesPreserved": [
-      "impressionPercentage",
-      "impressions"
-    ],
-    "schemaChecks": "JSON syntax checked; normalized fields reviewed against candidate output proposal"
-  }
+  "nextReleaseGates": [
+    "Verify a permitted commercial automated source route.",
+    "Obtain relevant approved API access and written permission if using the API program.",
+    "Inspect useful actual cloud data and source cost.",
+    "Validate live pagination and any billing contract before public paid release."
+  ]
 }

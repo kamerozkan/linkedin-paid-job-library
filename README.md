@@ -78,3 +78,7 @@ npm test
 ```
 
 The Docker build uses Node 22 and runs these tests. Running the Actor without an approved token returns an explicit source failure with zero result charges. This does not demonstrate successful live collection.
+
+## Dated private deployment check
+
+Private Actor build `0.1.1` (`I0cAgJx3cCQIVwpwJ`) built successfully. Owner run `qP6uYcOKpLn7iV6qI` intentionally supplied no LinkedIn token: platform `FAILED`, `OUTPUT.status=FAILED_SOURCE`, reason `API_ACCESS_TOKEN_REQUIRED`, zero source requests, zero dataset rows and zero result charges. This verifies the missing-access failure path only. Live collection and commercial reuse remain unverified. The [GitHub checks](https://github.com/kamerozkan/linkedin-paid-job-library/actions/runs/36789362955) passed; they use offline fixtures.
